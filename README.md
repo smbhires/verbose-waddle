@@ -1,26 +1,61 @@
-# Lama Dev School Management Dashboard
+# CampuSphere - Smart Campus Management System
 
-## Getting Started
+## Overview
+CampuSphere is a smart campus management system designed for educational institutions. It provides an efficient way to manage students, teachers, classes, grades, attendance, exams, and other essential academic activities.
 
-First, run the development server:
+## Features
+- **User Management**: Admins, Students, Teachers, and Parents have distinct roles and permissions.
+- **Class & Grade Management**: Organize students into grades and classes.
+- **Attendance Tracking**: Keep records of student attendance for each lesson.
+- **Exam & Assignment Management**: Schedule exams, assignments, and record student results.
+- **Timetable & Lessons**: Assign teachers to subjects and manage lesson schedules.
+- **Events & Announcements**: Notify students and teachers about important campus updates.
+- **Secure Authentication**: User authentication with encrypted credentials.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Database Schema
+This project uses a structured database schema to manage different entities:
+- **Admin**: Manages the system.
+- **Student**: Belongs to a class and has a parent linked.
+- **Teacher**: Assigned to subjects and classes.
+- **Parent**: Linked to students.
+- **Class & Grade**: Structure for organizing students.
+- **Subject & Lesson**: Defines courses and schedules.
+- **Exam & Assignment**: Manages evaluations and results.
+- **Attendance**: Tracks student participation.
+- **Events & Announcements**: Provides notifications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
+### Prerequisites
+Ensure you have the following installed:
+- Node.js & npm (if using a backend with JavaScript/TypeScript)
+- PostgreSQL/MySQL (or preferred database)
+- Prisma (if using ORM)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/campusphere.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up the database:
+   ```sh
+   npx prisma migrate dev --name init
+   ```
+4. Start the server:
+   ```sh
+   npm start
+   ```
 
-## Learn More
+## API Endpoints
+(If applicable, list API routes here)
 
-To learn more about Next.js, take a look at the following resources:
+## Contribution
+Feel free to contribute! Fork the repository, create a new branch, and submit a pull request.
 
-- [Lama Dev Youtube Channel](https://youtube.com/lamadev) 
-- [Next.js](https://nextjs.org/learn)
+## License
+This project is licensed under the MIT License.
+
+
