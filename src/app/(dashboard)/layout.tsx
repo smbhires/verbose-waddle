@@ -9,7 +9,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex space-grotesk-regular">
       {/* LEFT */}
       <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
         <Link
@@ -17,7 +17,7 @@ export default function DashboardLayout({
           className="flex items-center justify-center lg:justify-start gap-2"
         >
           <Image src="/logo.png" alt="logo" width={32} height={32} />
-          <span className="hidden lg:block font-bold">SchooLama</span>
+          <span className="hidden lg:block font-bold">Campusphere</span>
         </Link>
         <Menu />
       </div>

@@ -6,12 +6,12 @@ const menuItems = [
   {
     title: "MENU",
     items: [
-      {
-        icon: "/home.png",
-        label: "Home",
-        href: "/",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
+      // {
+      //   icon: "/home.png",
+      //   label: "Home",
+      //   href: "/",
+      //   visible: ["admin", "teacher", "student", "parent"],
+      // },
       {
         icon: "/teacher.png",
         label: "Teachers",

@@ -51,6 +51,7 @@ const ClassForm = dynamic(() => import("./forms/ClassForm"), {
 const ExamForm = dynamic(() => import("./forms/ExamForm"), {
   loading: () => <h1>Loading...</h1>,
 });
+
 // TODO: OTHER FORMS
 
 const forms: {
@@ -148,7 +149,7 @@ const FormModal = ({
         </button>
       </form>
     ) : type === "create" || type === "update" ? (
-      forms[table](setOpen, type, data, relatedData)
+      forms[table] ? forms[table](setOpen, type, data, relatedData) : <p className="text-red-500">No form found for {table}.</p>
     ) : (
       "Form not found!"
     );

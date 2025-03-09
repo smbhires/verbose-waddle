@@ -49,11 +49,6 @@ Ensure you have the following installed:
    npm start
    ```
 
-## API Endpoints
-(If applicable, list API routes here)
-
-## Contribution
-Feel free to contribute! Fork the repository, create a new branch, and submit a pull request.
 
 ## License
 This project is licensed under the MIT License.
